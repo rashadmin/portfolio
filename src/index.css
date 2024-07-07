@@ -1,0 +1,515 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  height: 100vh;
+  box-sizing: border-box;
+  color: #333333;
+}
+
+.App::before{
+  content: '';
+  background: #000 url('assets/background-14.jpg')no-repeat center /cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.AboutSideBar,.NavSideBar{
+  padding: 2rem;
+  margin: 3rem 0rem;
+}
+
+.AboutSideBar,.NavSideBar,.content{
+  align-self: flex-start;
+  align-items: start;
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 2rem 0rem;
+}
+
+.bg-w{
+  background-color: #c4e6eea4;
+}
+
+.AboutSideBar{
+  max-width: 23%;
+  position: sticky;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: #000;
+  
+}
+
+.AboutSideBar .AboutSideBar-item{
+  width: 90%;
+}
+
+.Education,.Certification,.WorkExperience{
+  background-color: #E0FFFF;
+  color: #000;
+  height: 150px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.firstline{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.AboutSideBar-item{
+  margin: 2rem 0rem;
+}
+
+  .AboutSideBar .navs{
+    padding: 1rem;
+    margin: 2rem 0rem;
+    width: 100%;
+  }
+
+
+
+.NavSideBar{
+  position: sticky;
+  min-width: 100px;
+  max-width: 10%;
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.NavSideBarHor{
+  width: 800px;
+  /* padding: 15px; */
+}
+
+.Header{
+  /* border-bottom: 3px #000 solid; */
+  margin-bottom: 5px;
+}
+
+.nav-item{
+  width: 80%;
+  height: 6rem;
+  background-color:  #E0FFFF;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-content: center ;
+  margin: 1rem;
+  border-radius: 5px; 
+}
+
+.NavSideBarHor .nav-item{
+  width: 100%;
+  height: 3rem;
+  text-align: start;
+  justify-content: center;
+  align-content: center ;
+  margin: 1rem;
+}
+
+.NavSideBar .nav-item .active{
+  /* background-color: #4e8ba1; */
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.NavSideBarHor .nav-item .active{
+  background-color: #000;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+ .nav-item .active:hover,.nav-item:not(:has(.active)):hover{
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-icon{
+  font-size: 3rem;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+.NavSideBarHor .nav-item .nav-icon{
+  width: 30%;
+  font-size: 2rem;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.NavSideBarHor .nav-item span{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.nav-item  span{
+  margin-top: 5px;
+  font-size: 0.8rem;
+} 
+
+.profileImg{
+  margin-bottom: 10px;
+}
+
+.homeContent{
+  text-align: center;
+  color: #000;
+}
+
+.content{
+  text-align: center;
+  width: 65%;
+  overflow-wrap: break-word;
+  color: #000;
+  padding: 0 ;
+}
+
+.headContent{
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.headstack{
+  justify-content: center;
+}
+
+.headTitle{
+  font-weight: bolder;
+  margin: 0;
+}
+
+.text-content{
+  font-size: 1.3rem;
+  margin-top: 0rem;
+  color: #333333;
+}
+
+.text-content::first-letter{
+  color: red;
+  font-size: 2.0rem;
+}
+
+.left-line,.right-line{
+  height: 0.2rem;
+  margin: 0 2rem;
+  width: 10rem;
+  justify-content: center;
+  background-color: #000;
+  /* border-bottom: 2rem #000 dashed; */
+}
+
+.PageContent{
+  text-align: left;
+  padding: 2rem;
+  width: 80%;
+  background-color: #fff;
+}
+
+.content-page{
+  /* background-color: #000; */
+  padding: 2rem 5rem;
+}
+
+.job-item{
+  background-color: #E0FFFF;
+  margin: 1rem;
+  height: fit-content;
+  border-radius: 15px;
+}
+
+.job{
+  text-align:start;
+  padding: 1rem 0.5rem;
+  align-self: start;
+  align-content: flex-start;
+  margin-top: 2rem;
+}
+
+.job-icon{
+  width: 20%;
+  font-size: 3rem;
+  color: #000;
+  align-self: start;
+  align-content: flex-start;
+}
+
+.job-details{
+  margin-left: 0.5rem;
+  width: 75%;
+}
+
+.job-name{
+  font-size: 1.9rem;
+}
+
+.job-description{
+  font-size: 1.5rem;
+  color: #333333;
+  height: 9rem;
+
+}
+.collapse-button{
+  width: 25%;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+
+.button-div{
+  text-align: end;
+}
+
+.hidden-text{
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #f3f6f6; */
+  margin: 1rem 0;
+  max-height: 12rem;
+  width: 1;
+  padding: 0.5rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow-y:auto;
+  border-radius: 10px;
+  border-right: #000 2px double;
+  border-bottom: #000 2px double;
+}
+
+.skill{
+  background-color: #000;
+  color: #fff;
+  width: fit-content;
+  height: 2rem;
+  padding: 0rem 1rem;
+  border-radius: 20px;
+  margin:0.2rem 0.2rem;
+  align-content: center;
+}
+
+.name,.jobTitle,.social-icons{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.name{
+  font-size: 3rem;
+  color: #000;
+  font-weight: bolder;
+}
+
+.jobTitle{
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.social-icons{
+  font-size: 2.5rem;
+  gap: 3rem;
+}
+
+.social{
+  margin: 0 1.5rem;
+  color: #000;
+}
+
+
+.cv-button{
+  width: 200px;
+  height: 4rem;
+  padding: 24rem;
+}
+
+.cv-text,.cv-icon{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cv-icon{
+  margin-top: -3px;
+}
+
+.aboutprofileImg{
+  margin: 3rem;
+}
+.aboutsidebarname,.about-jobTitle,.about-social-icons,.about-cv-button{
+  margin: 1rem 0;
+}
+
+.aboutsidebarname{
+  font-size: 2.0rem;
+}
+
+.about-jobTitle{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.about-social-icons{
+  font-size: 1.8rem;
+}
+
+.about-social{
+  margin: 0.5rem;
+  background-color: #E0FFFF;
+  height: 3.5rem;
+  width: 3.5rem;
+  padding: 0.9rem;
+  border-radius: 100%;
+
+}
+
+.about-cv-button{
+  width: 80%;
+  height: 4rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-cv-text,.about-cv-icon{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.about-cv-icon{
+  margin-top: -5px;
+}
+
+.contact-div{
+  padding: 1rem 0rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  text-align: left;
+
+}
+
+.contact{
+  margin: 1rem auto;
+  width: 95%;
+  border-radius: 5px;
+  color: #000;
+  padding: 1rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #f3f6f6;
+  align-self: start;
+  align-content: flex-start;
+
+}
+
+.contact-icon{
+  width: 25%;
+  /* height: 4rem; */
+  font-size: 3.5rem;
+  color: #000;
+  /* background-color: #E0FFFF;; */
+  padding: 0.5rem;
+}
+
+.contact-details{
+  width: 65%;
+  margin-left: 0.5rem;
+}
+
+.contact-name{
+  font-size: 1rem;
+}
+
+.contact-value{
+  font-size: 1.15rem;
+  overflow-wrap: break-word;
+}
+/* 
+.PortfolioButton{
+  display: flex;
+  justify-content: flex-end;
+  /* width: ??00px; */
+
+
+.PortfolioButton .nav-item{
+  background-color: #E0FFFF;
+  color: #000;
+  width: 9rem;
+  height: 3rem;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.PortfolioButton .nav-item .nav-link{
+  height: 100%;
+  align-content: center;
+}
+
+.PortfolioButton .nav-item span{
+  text-align: center;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.PortfolioButton .nav-item .active{
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+
+}
+
+.PortfolioButton .nav-item .active:hover,.PortfolioButton .nav-item:not(:has(.active)):hover{
+  background-color: #000;
+}
+
+.PortfolioItem{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.IndPortfolio{
+  justify-content: center;
+  text-align: center;
+}
+
+.PortfolioItem p{
+  color: red;
+  font-size: 1.5rem;
+}
+
+.Skills{
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
