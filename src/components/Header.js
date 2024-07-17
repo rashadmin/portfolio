@@ -6,7 +6,7 @@ import NavSideBar from './NavSideBar';
 import { Link } from "react-router-dom";
 function Header({navsidebarHor}) {
   return (
-    <Navbar className='Header'>
+    <Navbar expand="lg" className='Header'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
             <img
@@ -17,6 +17,7 @@ function Header({navsidebarHor}) {
               height="150"
             />
           </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           {navsidebarHor && <NavSideBar horizontal/>}
         </Container>
       </Navbar>

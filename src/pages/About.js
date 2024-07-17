@@ -6,7 +6,7 @@ import Skills from '../components/Skills'
 import AboutmeDesc from '../components/AboutmeDesc'
 function About() {
   return (
-    <Body aboutsidebar navsidebar>
+    <Body aboutsidebar navsidebarHor>
         <HeadContent>
           ABOUT ME
         </HeadContent>

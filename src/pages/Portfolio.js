@@ -6,7 +6,7 @@ import PortfolioButton from '../components/PortfolioButton'
 import PortfolioItem from '../components/PortfolioItem'
 function Portfolio({children}) {
   return (
-    <Body aboutsidebar navsidebar>
+    <Body aboutsidebar navsidebarHor>
         <HeadContent>
           PORTFOLIO
         </HeadContent>

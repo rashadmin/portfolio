@@ -8,9 +8,9 @@ import SocialIcons from './socialIcons';
 // import { FaLocationDot } from 'react-icons/fa6';
 function AboutSideBar() {
   return (
-        <Navbar sticky="top" className='flex-column AboutSideBar bg-w'> 
+        <Navbar sticky="top" className='AboutSideBar flex-column  bg-w'> 
         <div className='AboutSideBar-item'>
-          <ProfilePic width="200" height="200" className='aboutprofileImg' rounded />
+          <ProfilePic className='aboutprofileImg' rounded />
       <h1 className='aboutsidebarname'>Ameen Abdulrasheed</h1>
             <Jobtitle className='about-jobTitle'/>
             <SocialIcons className='about-social-icons'/>

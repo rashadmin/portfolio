@@ -4,9 +4,11 @@ import { NavLink } from "react-router-dom";
 import { FaHome,FaUser,FaFileAlt,FaBriefcase,FaAddressBook } from "react-icons/fa";
 
 
-export default function NavSidebar({horizontal}) {
+export default function NavSidebar() {
   return (
-    <Navbar sticky="top" className={`${horizontal?'flex-row NavSideBarHor':'flex-column NavSideBar bg-w'}`}>
+    <Navbar.Collapse sticky="top" className='NavSideBarHor flex-row'>
+      <Nav>
+
       <Nav.Item>
         <Nav.Link as = {NavLink} to="/" end><FaHome className="nav-icon" />  <span className="nav-text">Home</span></Nav.Link>
       </Nav.Item>
@@ -22,6 +24,7 @@ export default function NavSidebar({horizontal}) {
       <Nav.Item>
         <Nav.Link as = {NavLink} to="/Contact"><FaAddressBook className="nav-icon" /> <span className="nav-text">Contact</span></Nav.Link>
       </Nav.Item>
-    </Navbar>
+      </Nav>
+      </Navbar.Collapse>
   );
 }

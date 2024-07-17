@@ -6,7 +6,7 @@ import Stack from 'react-bootstrap/Stack'
 
 function Contact() {
   return (
-    <Body aboutsidebar navsidebar>
+    <Body aboutsidebar navsidebarHor>
       <Stack>
         <HeadContent>
           CONTACT

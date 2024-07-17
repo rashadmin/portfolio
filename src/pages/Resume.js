@@ -7,7 +7,7 @@ import WorkExperienceSection from '../components/WorkExperienceSection'
 import CertificationSection from '../components/CertificationSection'
 function Resume() {
   return (
-    <Body aboutsidebar navsidebar>
+    <Body aboutsidebar navsidebarHor>
         <HeadContent>
           RESUME
         </HeadContent>
