@@ -28,7 +28,7 @@ import { FaHome,FaUser,FaFileAlt,FaBriefcase,FaAddressBook } from "react-icons/f
 export default function PortfolioButton() {
   return (
       <div className='PortfolioButton'>
-    <Navbar >
+    <Nav variant="tabs" defaultActiveKey="/portfolio">
       <Nav.Item>
         <Nav.Link as = {NavLink} to="/portfolio" end>  <span className="portfolio-text">All</span></Nav.Link>
       </Nav.Item>
@@ -47,7 +47,7 @@ export default function PortfolioButton() {
       <Nav.Item>
         <Nav.Link as = {NavLink} to="/portfolio/research"> <span className="portfolio-text">Research</span></Nav.Link>
       </Nav.Item>
-    </Navbar>
+    </Nav>
       </div>
   );
 }

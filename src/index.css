@@ -59,8 +59,8 @@ code {
   
 }
 
-.AboutSideBar .AboutSideBar-item{
-  width: 90%;
+.AboutSideBar-item{
+  width: 100%;
 }
 
 .Education,.Certification,.WorkExperience{
@@ -109,7 +109,7 @@ code {
   margin-bottom: 5px;
 }
 
-.nav-item{
+.NavSideBarHor .nav-item{
   width: 80%;
   height: 6rem;
   background-color:  #E0FFFF;
@@ -152,9 +152,9 @@ code {
   border-radius: 5px;
 }
 
- .nav-item .active:hover,.nav-item:not(:has(.active)):hover{
+.NavSideBarHor .nav-link .active:hover,.NavSideBarHor .nav-link:not(:has(.active)):hover{
   background-color: #000;
-  color: #fff;
+  color: #E0FFFF;
   border-radius: 5px;
   transition: all 100ms ease-in-out;
 }
@@ -170,14 +170,12 @@ code {
 
 .NavSideBarHor .nav-item span{
   text-align: center;
-  font-size: 1rem;
   margin-top: 0;
   font-weight: bold;
 }
 
-.nav-item  span{
-  margin-top: 5px;
-  font-size: 0.8rem;
+.NavSideBarHor .nav-item  span{
+  font-size: 1rem;
 } 
 .NavSideBarHor .nav-item{
   width: 80%;
@@ -232,8 +230,8 @@ code {
 
 .left-line,.right-line{
   height: 0.2rem;
-  margin: 0 2rem;
-  width: 10rem;
+  margin: 0 1rem;
+  width: 8rem;
   justify-content: center;
   background-color: #000;
   /* border-bottom: 2rem #000 dashed; */
@@ -369,9 +367,11 @@ code {
 }
 
 .aboutprofileImg{
-  margin: 0rem 3rem;
-  width: 80%;
-  height: 100%;
+  margin: 0rem auto;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  
 }
 .aboutsidebarname,.about-jobTitle,.about-social-icons,.about-cv-button{
   margin: 1rem 0;
@@ -461,29 +461,43 @@ code {
   overflow-wrap: break-word;
 }
  
-.PortfolioButton{
+/* .PortfolioButton{
   display: flex;
   justify-content: flex-end;
+  overflow: scroll;
+} */
+
+.NavSideBarHor .nav-link{
+  color: #000;
+  align-items: center;
+  align-content: center;
 }
 
-.nav-link{
-  color: #000;
+.NavSideBarHor .nav-link .active{
+  color: #fff;
 }
 
 
 .PortfolioButton .nav-item{
   background-color: #E0FFFF;
   color: #000;
-  width: 9rem;
-  height: 3rem;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  margin: 0.5rem;
+  margin: 0 0.1rem;
+  
 }
 
+.portfolio-text{
+  color: #000;
+}
+.PortfolioButton .nav-item .active{
+  background-color: #fff;
+  border: 2px solid #000;
+}
 
-.PortfolioButton .nav-item .nav-link{
+.PortfolioButton .nav-item .active .portfolio-text{
+  color: #000;
+}
+
+/* .PortfolioButton .nav-item .nav-link{
   height: 100%;
   align-content: center;
 }
@@ -493,17 +507,17 @@ code {
   font-size: 100%;
   height: 100%;
   width: 100%;
-}
+} */
 
-.PortfolioButton .nav-item .active{
+.PortfolioButton .nav-link .active{
   background-color: #333;
   color: #fff;
   border-radius: 5px;
 
 }
 
-.PortfolioButton .nav-item .active:hover,.PortfolioButton .nav-item:not(:has(.active)):hover{
-  background-color: #000;
+.PortfolioButton .nav-link .active:hover,.PortfolioButton .nav-link:not(:has(.active)):hover{
+  background-color: #fff;
 }
 
 .PortfolioItem{
@@ -558,9 +572,20 @@ code {
   font-size: 3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px){
+  .navbar-nav{
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
   .ResponsiveStack {
     flex-direction: column ;
+  }
+
+  .name{
+    font-size: 2rem;
   }
 
   .AboutSideBar{
