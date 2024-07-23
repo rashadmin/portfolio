@@ -59,6 +59,13 @@ code {
   
 }
 
+.navbar-toggler{
+  background-color: #E0FFFF ;
+}
+.navbar-toggler-icon{ 
+  background-color: #E0FFFF;
+}
+
 .AboutSideBar-item{
   width: 100%;
 }
