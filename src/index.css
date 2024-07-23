@@ -63,6 +63,14 @@ code {
   width: 100%;
 }
 
+.Educationsection{
+  text-align: left;
+}
+
+.Educationsection h2,.WorkExperiencesection h2, .Certificationsection h2{
+  font-size: 1.3rem;
+}
+
 .Education,.Certification,.WorkExperience{
   background-color: #E0FFFF;
   color: #000;
@@ -70,6 +78,7 @@ code {
   margin: 1rem 0;
   padding: 1rem;
 }
+
 
 .firstline{
   display: flex;
@@ -646,5 +655,34 @@ code {
       flex-wrap: nowrap;
       overflow-x: scroll;
       overflow-y: hidden;
+    }
+
+    .Education{
+      padding: 0.5rem 0.2;
+    }
+
+    .firstline{
+      flex-direction: column;
+    }
+
+    .firstline small{
+      font-size: 0.7rem;
+
+    }
+
+    .firstline h4{
+      font-size: 1rem;
+      width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .Education h5{
+      font-size: 0.9rem;
+    } 
+    .Education p{
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
     }
 }

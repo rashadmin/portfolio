@@ -8,7 +8,7 @@ function About() {
   return (
     <Body aboutsidebar navsidebarHor>
         <HeadContent>
-          ABOUT ME
+          ABOUT
         </HeadContent>
         <PageContent>
          <AboutmeDesc/>

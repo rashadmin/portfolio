@@ -5,10 +5,10 @@ function Education({university,degree,date,location,cgpa}) {
   return (
     <Container className='Education'>
         <div className='firstline'>
-            <h4>{degree}</h4>
+            <h4 title={degree}>{degree}</h4>
             <small>{date}</small>
         </div>
-        <h5>{university}</h5>
+        <p>{university}</p>
         <p>{location}</p>
         <p>CGPA : {cgpa}</p>
     </Container>
