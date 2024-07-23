@@ -612,6 +612,10 @@ code {
 
     .navbar-nav{
       margin: auto;
+
+    }
+    .PortfolioButton .nav-link{
+      width: max-content;
     }
 
     .PageContent{
@@ -636,5 +640,11 @@ code {
     .contact-value{
       font-size: 1rem;
       overflow-wrap: break-word;
+    }
+
+    .nav{
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
     }
 }
