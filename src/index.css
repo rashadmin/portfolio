@@ -98,7 +98,7 @@ code {
 }
 
 .NavSideBarHor{
-  width: 800px;
+  /* width: 900px; */
   justify-content: end;
   color: #000;
   /* padding: 15px; */
@@ -110,15 +110,15 @@ code {
 }
 
 .NavSideBarHor .nav-item{
-  width: 80%;
-  height: 6rem;
+  width: 100%;
   background-color:  #E0FFFF;
   color: #000;
-  text-align: center;
+  border-radius: 5px; 
+  height: 3rem;
+  text-align: start;
   justify-content: center;
   align-content: center ;
-  margin: 1rem;
-  border-radius: 5px; 
+  margin: 0.5rem;
 }
 
 .navbar-nav{
@@ -128,14 +128,6 @@ code {
 
 }
 
-.NavSideBarHor .nav-item{
-  /* width: 10%; */
-  height: 3rem;
-  text-align: start;
-  justify-content: center;
-  align-content: center ;
-  margin: 1rem;
-}
 
 .NavSideBar .nav-item .active{
   /* background-color: #4e8ba1; */
@@ -148,7 +140,6 @@ code {
 .NavSideBarHor .nav-item .active{
   background-color: #000;
   color: #fff;
-  padding: 6px;
   border-radius: 5px;
 }
 
@@ -590,9 +581,10 @@ code {
 
   .AboutSideBar{
     position: relative;
-    max-width: 90%;
+    max-width: 100%;
     align-items: center;
     align-self: center;
+    padding: 2rem 0.5rem;
     }
   
     .content{
@@ -610,6 +602,12 @@ code {
     .job-item{
       height: max-content;
       box-sizing: border-box;
+      margin: 1rem 0;
+    }
+
+    .job-name{
+      font-size: 1.5rem;
+      font-weight: bolder;
     }
 
     .navbar-nav{
@@ -621,11 +619,22 @@ code {
     }
     .job-description{
       height: fit-content;
+      font-size: 1rem;
     }
 
     .AboutSideBar-item{
       width: 100%;
       justify-content: center;
       text-align: center;
+    }
+
+    .contact{
+      width: 100%;
+      padding: 1rem 0;
+    }
+
+    .contact-value{
+      font-size: 1rem;
+      overflow-wrap: break-word;
     }
 }
