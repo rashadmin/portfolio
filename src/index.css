@@ -492,6 +492,18 @@ code {
   
 }
 
+.github:hover,.twitter:hover{
+  color:#fff;
+}
+
+.whatsapp:hover{
+  color: green;
+}
+
+.linkedin:hover{
+  color:#0A66C2;
+}
+
 .portfolio-text{
   color: #000;
 }
