@@ -3,6 +3,7 @@ import Body from '../components/Body'
 import PageContent from '../components/PageContent'
 import HeadContent from '../components/HeadContent'
 import Stack from 'react-bootstrap/Stack'
+import Messagebox from '../components/Messagebox'
 
 function Contact() {
   return (
@@ -13,6 +14,7 @@ function Contact() {
         </HeadContent>
         <PageContent>
             <>
+              <Messagebox/>
             </>
         </PageContent>
 

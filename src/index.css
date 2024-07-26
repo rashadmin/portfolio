@@ -20,7 +20,7 @@ code {
 
 .App::before{
   content: '';
-  background: #000 url('assets/background-14.jpg')no-repeat center /cover;
+  background: #E0FFFF url('assets/background-14.jpg')no-repeat center /cover;
   height: 100%;
   width: 100%;
   opacity: 0.9;
@@ -345,6 +345,30 @@ code {
 .jobTitle{
   font-size: 1.5rem;
   color: #000;
+}
+
+.messageBox{
+  width: 80%;
+  background-color: #E0FFFF;
+  height: max-content;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.messageBox > *{
+  text-align: left;
+  margin: 3rem 0;
+}
+
+.messageBox .submit-form{
+  display: flex;
+  margin: 1rem 0;  
+
+}
+
+.messageBox p{
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 .social-icons{

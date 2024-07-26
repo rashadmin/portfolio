@@ -7,7 +7,7 @@ function SocialIcons({className}) {
   return (
     <div className={className}> 
             <Nav.Link className='social github' href="https://github.com/rashadmin" target='_blank'><FaGithub/></Nav.Link>
-            <Nav.Link className='social linkedin' href="https://www.linkedin.com/in/abdulrasheed-ameen-27829822a/" target='_blank'><FaLinkedin/></Nav.Link>
+            <Nav.Link className='social linkedin' href="https://www.linkedin.com/in/pytech" target='_blank'><FaLinkedin/></Nav.Link>
             <Nav.Link className='social twitter' href="https://www.google.com" target='_blank'><FaXTwitter/></Nav.Link>
             <Nav.Link className='social whatsapp' href="https://wa.link/auwl1b" target='_blank'><FaWhatsapp/></Nav.Link>
     </div>
