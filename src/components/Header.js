@@ -10,7 +10,7 @@ function Header({navsidebarHor}) {
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
             <img
-              src={require("../assets/Black and White Simple Aesthetic Monogram Initials Logo (3) (1).png")}
+              src={require("../assets/ChatGPT_Image_Apr_6__2025__06_46_33_AM-removebg.png")}
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
               width="150"
