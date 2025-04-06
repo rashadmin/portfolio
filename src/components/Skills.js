@@ -12,7 +12,7 @@ function Skills() {
 
     const newSkills = [];
     const [open, setOpen] = useState(false);
-    while(skills.length) newSkills.push(skills.splice(0,2));
+    while(skills.length) newSkills.push(skills.splice(0,1));
     return (
         <>
     <div className='button-div'>
