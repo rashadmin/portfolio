@@ -14,7 +14,7 @@ function Header({navsidebarHor}) {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
               width="250"
-              height="250"
+              height="200"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
